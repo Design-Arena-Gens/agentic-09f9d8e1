@@ -1,0 +1,241 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #0d1b2a, #02040f 60%);
+  color: #f7f9fc;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 2rem 0;
+}
+
+.card {
+  background: rgba(6, 20, 37, 0.76);
+  border: 1px solid rgba(113, 178, 255, 0.2);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 20px 40px rgba(8, 22, 43, 0.45);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(113, 178, 255, 0.5);
+  box-shadow: 0 30px 60px rgba(8, 22, 43, 0.6);
+}
+
+.card h3 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.muted {
+  opacity: 0.8;
+  font-size: 0.875rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(113, 178, 255, 0.1);
+  color: #71b2ff;
+}
+
+.section {
+  margin-top: 2.5rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.section pre {
+  white-space: pre-wrap;
+  background: rgba(3, 9, 20, 0.8);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(113, 178, 255, 0.15);
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.source-link {
+  color: #8fd3ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.source-link:hover {
+  text-decoration: underline;
+}
+
+.timestamp {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.script-block {
+  background: rgba(7, 18, 35, 0.9);
+  padding: 1.5rem;
+  border-radius: 18px;
+  border: 1px solid rgba(81, 152, 229, 0.3);
+  box-shadow: 0 16px 32px rgba(3, 11, 24, 0.4);
+}
+
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.hashtags span {
+  background: rgba(113, 178, 255, 0.15);
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+}
+
+.visual-ideas ul {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.news-list article {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  border: 1px solid rgba(113, 178, 255, 0.15);
+  padding: 1.3rem;
+}
+
+.news-list h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.news-list p {
+  margin: 0.4rem 0;
+  line-height: 1.5;
+}
+
+.news-list footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.brand {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #71b2ff;
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand span {
+  background: rgba(113, 178, 255, 0.2);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.75rem;
+}
+
+.title {
+  font-size: clamp(2.25rem, 5vw, 3.2rem);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  max-width: 60ch;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.grid-two .section {
+  margin: 0;
+}
+
+.cta {
+  margin-top: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(113, 178, 255, 0.7), rgba(83, 93, 255, 0.65));
+  color: #02040f;
+  font-weight: 600;
+}
+
+.cta span {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 2.5rem 1.1rem 4rem;
+  }
+}
